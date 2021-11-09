@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637687537849989839
-    m_Hash: 889544286
+      ticks: 637720296294145048
+    m_Hash: 202722892
   m_LockFileStatus:
     m_FilePath: C:/Users/yongp/kidsapp/UnityBoardGame/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637687538674202062
-    m_Hash: 557521788
+      ticks: 637720296294145048
+    m_Hash: 2070563383
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:

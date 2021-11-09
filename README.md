@@ -1,6 +1,5 @@
 # kidsapp
 KIDS APP
 
-With progress board
-HIHI EK
+With main menu
 

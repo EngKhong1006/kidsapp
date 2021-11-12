@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
-    private static GameObject whoWinsTextShadow, player1MoveText, player2MoveText, player1Round, player2Round;
-
-    private static GameObject player1, player2, player1WinIcon, player2WinIcon, crown, blackScreen;
+    public static GameObject whoWinsTextShadow, player1MoveText, player2MoveText, player1Round, player2Round;
+    
+    public static GameObject player1, player2, player1WinIcon, player2WinIcon, crown, blackScreen;
 
     public AudioSource audioSource;
 
@@ -15,18 +16,31 @@ public class GameControl : MonoBehaviour
     public static int player1StartWaypoint = 0;
     public static int player2StartWaypoint = 0;
 
-    public static int roundToWin = 1;
+    public int roundToWin = 1;
 
     public static bool gameOver = false;
 
     public Animator animator;
 
+    public TextAsset jsonFile;
+
+    public static List<MyQuestion> questionPool = new List<MyQuestion>();
+
+    void loadAllQuestion()
+    {
+        Questions questiosInJson = JsonUtility.FromJson<Questions>(jsonFile.text);
+
+        foreach (MyQuestion question in questiosInJson.questions)
+        {
+            questionPool.Add(question);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+        loadAllQuestion();
         gameOver = false;
-        player1StartWaypoint = 0;
-        player2StartWaypoint = 0;
         roundToWin = PlayerPrefs.GetInt("RoundValue", 1);
 
         player1WinIcon = GameObject.Find("Player1WinIcon");
@@ -73,34 +87,35 @@ public class GameControl : MonoBehaviour
         if (player2.GetComponent<FollowThePath>().waypointIndex > player2StartWaypoint + diceSideThrown)
         {
             player2.GetComponent<FollowThePath>().moveAllowed = false;
-            player2MoveText.gameObject.SetActive(false);
-            player1MoveText.gameObject.SetActive(true);
             player2StartWaypoint = player2.GetComponent<FollowThePath>().waypointIndex - 1;
         }
 
         if (player1.GetComponent<FollowThePath>().waypointIndex > player1StartWaypoint + diceSideThrown)
         {
             player1.GetComponent<FollowThePath>().moveAllowed = false;
-            player1MoveText.gameObject.SetActive(false);
-            player2MoveText.gameObject.SetActive(true);
             player1StartWaypoint = player1.GetComponent<FollowThePath>().waypointIndex - 1;
         }
     }
+    
     public static void MovePlayer(int playerToMove)
     {
         switch (playerToMove)
         {
             case 1:
                 player1.GetComponent<FollowThePath>().moveAllowed = true;
+                player1MoveText.gameObject.SetActive(false);
+                player2MoveText.gameObject.SetActive(true);
                 break;
             case 2:
                 player2.GetComponent<FollowThePath>().moveAllowed = true;
+                player2MoveText.gameObject.SetActive(false);
+                player1MoveText.gameObject.SetActive(true);
                 break;
         }
     }
+    
     public void printWinner(int player)
     {
-        Debug.Log("Winner");
         float volumeValue = PlayerPrefs.GetFloat("VolumeValue");
         if (player == 1)
         {
@@ -122,6 +137,9 @@ public class GameControl : MonoBehaviour
         player2.GetComponent<FollowThePath>().moveAllowed = false;
 
         animator.Play("Dropdown", -1);
+
+        player1StartWaypoint = 0;
+        player2StartWaypoint = 0;
         this.enabled = false;
     }
 }

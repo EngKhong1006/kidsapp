@@ -17,7 +17,7 @@ public class RoundSetting : MonoBehaviour
 
     public void roundUp()
     {
-        if(roundValue != 5)
+        if(roundValue != 10)
         {
             roundValue++;
             saveValue();

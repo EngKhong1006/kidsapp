@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Dice : MonoBehaviour
 {
@@ -20,7 +21,9 @@ public class Dice : MonoBehaviour
     private void OnMouseDown()
     {
         if (!GameControl.gameOver && coroutineAllowed)
+        {
             StartCoroutine("RollTheDice");
+        } 
     }
 
     private IEnumerator RollTheDice()
@@ -31,7 +34,7 @@ public class Dice : MonoBehaviour
         {
             randomDiceSide = Random.Range(0, 6);
             rend.sprite = diceSides[randomDiceSide];
-            yield return new WaitForSeconds(0f);
+            yield return new WaitForSeconds(0.1f);
         }
 
         GameControl.diceSideThrown = randomDiceSide + 1;

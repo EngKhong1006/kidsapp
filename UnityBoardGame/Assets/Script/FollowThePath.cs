@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class FollowThePath : MonoBehaviour
 {
-    public Transform[] waypoints;
+    [SerializeField] public Transform[] waypoints;
+    [SerializeField] private float moveSpeed = 1f;
 
-    [SerializeField]
-    private float moveSpeed = 1f;
-
-    [HideInInspector]
     public int waypointIndex = 0;
-
     public bool moveAllowed = false;
+    public int coin = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -29,21 +26,15 @@ public class FollowThePath : MonoBehaviour
 
     private void Move()
     {
-        //Debug.Log("round: " + round + " waypoint: " + waypointIndex);
-        //waypointIndex = waypointIndex % waypoints.Length;
+        transform.position = Vector2.MoveTowards(
+            transform.position,
+            waypoints[waypointIndex % waypoints.Length].transform.position,
+            moveSpeed * Time.deltaTime
+        );
 
-        /*if (waypointIndex <= waypoints.Length - 1)
-        {*/
-            transform.position = Vector2.MoveTowards(
-                transform.position,
-                waypoints[waypointIndex % waypoints.Length].transform.position,
-                moveSpeed * Time.deltaTime
-            );
-
-            if(transform.position == waypoints[waypointIndex % waypoints.Length].transform.position)
-            {
-                waypointIndex += 1;
-            }
-        //}
+        if(transform.position == waypoints[waypointIndex % waypoints.Length].transform.position)
+        {
+            waypointIndex += 1;
+        }
     }
 }

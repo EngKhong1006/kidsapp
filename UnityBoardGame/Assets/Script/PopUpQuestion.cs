@@ -8,6 +8,7 @@ public class PopUpQuestion : MonoBehaviour
 {
     private bool coroutineAllowed = true;
     private int whosTurn = 1;
+    private int randBuff = 0;
 
     [Header("Question Screen Setting")]
     [SerializeField] private Text questionText;
@@ -28,9 +29,19 @@ public class PopUpQuestion : MonoBehaviour
     [SerializeField] private Text player1Coin;
     [SerializeField] private Text player2Coin;
 
+    [Header("Buff Screen Setting")]
+    [SerializeField] private GameObject buffScreen;
+    [SerializeField] private Text randomBuffText;
+    [SerializeField] private Text playerCoinText;
+    [SerializeField] private GameObject player1Icon;
+    [SerializeField] private GameObject player2Icon;
+    [SerializeField] private Button confirmButton;
+    [SerializeField] private Button rejectButton;
+
     private const int TIMERCOUNTER = 15;
     private static int randomQuestionIdex;
     private bool correct = false;
+    private bool affortable = false;
 
     private MyQuestion currentQuestion;
 
@@ -43,6 +54,7 @@ public class PopUpQuestion : MonoBehaviour
     {
         diceScreen.SetActive(false);
         ansScreen.SetActive(false);
+        buffScreen.SetActive(false);
         player1Coin.text = 0.ToString();
         player2Coin.text = 0.ToString();
     }
@@ -98,6 +110,25 @@ public class PopUpQuestion : MonoBehaviour
         }
     }
 
+    public void rollDice()
+    {
+        if (whosTurn == 1)
+        {
+            player1Coin.text = (GameControl.player1.GetComponent<FollowThePath>().coin -= 30).ToString();
+        }
+        else if (whosTurn == -1)
+        {
+            player2Coin.text = (GameControl.player2.GetComponent<FollowThePath>().coin -= 30).ToString();
+        }
+        StartCoroutine("RollTheDice");
+    }
+
+    public void rollDiceWithoutBuff()
+    {
+        randBuff = 0;
+        StartCoroutine("RollTheDice");
+    }
+
     private void printWrong()
     {
         ansScreen.SetActive(true);
@@ -112,14 +143,31 @@ public class PopUpQuestion : MonoBehaviour
 
     private void printCorrect()
     {
+        int tempCoin = 0;
         ansScreen.SetActive(true);
         animatorAnsScreen.Play("ZoomIn", -1);
         correctScreen.color = Color.green;
         correctText.text = "CORRECT";
         correct = true;
+        increaseCoin();
         StartCoroutine("printPlayerCoin");
         StartCoroutine("Delay");
-        StartCoroutine("RollTheDice");
+
+        if (whosTurn == 1)
+            tempCoin = GameControl.player1.GetComponent<FollowThePath>().coin;
+        else
+            tempCoin = GameControl.player2.GetComponent<FollowThePath>().coin;
+
+        if (tempCoin >= 30) {
+            affortable = true;
+            StartCoroutine("RandBuff");
+        }
+        else
+        {
+            randBuff = 0;
+            affortable = false;
+            StartCoroutine("RollTheDice");
+        }
     }
 
     private void movePlayer(int step)
@@ -137,25 +185,41 @@ public class PopUpQuestion : MonoBehaviour
         whosTurn *= -1;
     }
 
-    private IEnumerator printPlayerCoin()
+    private void increaseCoin()
     {
-        for (int i = 0; i < 20; i++)
-        {
-            coinText.text = Random.Range(0, 999).ToString();
-            yield return new WaitForSeconds(0.1f);
-        }
-
         if (whosTurn == 1)
         {
-            if (correct)
-                GameControl.player1.GetComponent<FollowThePath>().coin += 10;
-            coinText.text = (GameControl.player1.GetComponent<FollowThePath>().coin).ToString();
+            GameControl.player1.GetComponent<FollowThePath>().coin += 10;
         }
         else if (whosTurn == -1)
         {
-            if (correct)
-                GameControl.player2.GetComponent<FollowThePath>().coin += 10;
-            coinText.text = (GameControl.player2.GetComponent<FollowThePath>().coin).ToString();
+            GameControl.player2.GetComponent<FollowThePath>().coin += 10;
+        }
+    }
+
+    private IEnumerator printPlayerCoin()
+    {
+        int tempCoin = 0;
+        if (whosTurn == 1)
+        {
+            tempCoin = GameControl.player1.GetComponent<FollowThePath>().coin;
+        }
+        else if (whosTurn == -1)
+        {
+            tempCoin = GameControl.player2.GetComponent<FollowThePath>().coin;
+        }
+
+        for (int i = 0; i < 10; i++)
+        {
+            int x = (tempCoin - 10 + i + 1);
+            if (x < 0)
+                x = 0;
+            else if (!correct)
+            {
+                x = tempCoin;
+            }
+            coinText.text = x.ToString();
+            yield return new WaitForSeconds(0.2f);
         }
 
         player1Coin.text = (GameControl.player1.GetComponent<FollowThePath>().coin).ToString();
@@ -164,11 +228,14 @@ public class PopUpQuestion : MonoBehaviour
 
     private IEnumerator RollTheDice()
     {
-        for (int i = 0; i < 3; i++)
+        if (!affortable)
         {
-            yield return new WaitForSeconds(1f);
+            for (int i = 0; i < 3; i++)
+            {
+                yield return new WaitForSeconds(1f);
+            }
         }
-
+        buffScreen.SetActive(false);
         diceScreen.SetActive(true);
         int randomDiceSide = 0;
         for (int i = 0; i <= 20; i++)
@@ -177,6 +244,10 @@ public class PopUpQuestion : MonoBehaviour
             diceText.text = randomDiceSide.ToString();
             yield return new WaitForSeconds(0.1f);
         }
+        if(randBuff != 0)
+            diceText.text = randomDiceSide.ToString() + " + " + randBuff;
+        else
+            diceText.text = randomDiceSide.ToString();
 
         for (int i = 0; i < 1; i++)
         {
@@ -184,7 +255,38 @@ public class PopUpQuestion : MonoBehaviour
         }
 
         diceScreen.SetActive(false);
-        movePlayer(randomDiceSide);
+        movePlayer(randomDiceSide + randBuff);
+    }
+
+    private IEnumerator RandBuff()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            yield return new WaitForSeconds(1f);
+        }
+
+        buffScreen.SetActive(true);
+
+        if(whosTurn == 1)
+        {
+            player1Icon.SetActive(true);
+            player2Icon.SetActive(false);
+            playerCoinText.text = (GameControl.player1.GetComponent<FollowThePath>().coin).ToString();
+        }
+        else
+        {
+            player1Icon.SetActive(false);
+            player2Icon.SetActive(true);
+            playerCoinText.text = (GameControl.player2.GetComponent<FollowThePath>().coin).ToString();
+        }
+
+        randBuff = 0;
+        for (int i = 0; i <= 20; i++)
+        {
+            randBuff = Random.Range(0, 6) + 1;
+            randomBuffText.text = " +" + randBuff.ToString();
+            yield return new WaitForSeconds(0.1f);
+        }
     }
 
     private IEnumerator Delay()

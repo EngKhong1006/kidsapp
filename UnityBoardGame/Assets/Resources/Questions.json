@@ -1,406 +1,455 @@
 {
-  "questions":
-  [
+  "questions": [
     {
       "question": "Which animal lays eggs?",
-      "choice": ["Dog", "Cat", "Duck", "Sheep"],
+      "choice": [ "Dog", "Cat", "Duck", "Sheep" ],
       "ansIndex": 2
     },
     {
       "question": "A male cow is called?",
-      "choice": ["Ox", "Dog", "Sheep", "Monkey"],
+      "choice": [ "Ox", "Dog", "Sheep", "Monkey" ],
       "ansIndex": 0
     },
     {
       "question": "All animals need food, air, and ____ to survive.",
-      "choice": ["House", "Water", "Chocolate", "Fruits"],
+      "choice": [ "House", "Water", "Chocolate", "Fruits" ],
       "ansIndex": 1
     },
     {
       "question": "Which one is a fur-bearing animal?",
-      "choice": ["Hen", "Crocodile", "Tortoise", "Cat"],
+      "choice": [ "Hen", "Crocodile", "Tortoise", "Cat" ],
       "ansIndex": 3
     },
     {
       "question": "What is Earth’s only natural satellite?",
-      "choice": ["Sun", "Mars", "Venus", "Moon"],
+      "choice": [ "Sun", "Mars", "Venus", "Moon" ],
       "ansIndex": 3
     },
     {
       "question": "The tree has a branch filled with green _____.",
-      "choice": ["Hair", "Root", "Leaves", "Trunk"],
+      "choice": [ "Hair", "Root", "Leaves", "Trunk" ],
       "ansIndex": 2
     },
     {
       "question": "What part of the body helps you move?",
-      "choice": ["Eyes", "Lungs", "Pancreas", "Muscles"],
+      "choice": [ "Eyes", "Lungs", "Pancreas", "Muscles" ],
       "ansIndex": 3
     },
     {
       "question": "The two holes of the nose are called?",
-      "choice": ["Eyelids", "Nostrils", "Nails", "Hair"],
+      "choice": [ "Eyelids", "Nostrils", "Nails", "Hair" ],
       "ansIndex": 1
     },
     {
       "question": "What star shines in the day and provides light?",
-      "choice": ["Moon", "Venus", "Mars", "Sun"],
+      "choice": [ "Moon", "Venus", "Mars", "Sun" ],
       "ansIndex": 3
     },
     {
       "question": "Legs have feet and arms have ___.",
-      "choice": ["Ankles", "Pelvis", "Hands", "Skull"],
+      "choice": [ "Ankles", "Pelvis", "Hands", "Skull" ],
       "ansIndex": 2
     },
     {
       "question": "Which organ covers the entire body and protects it?",
-      "choice": ["Liver", "Heart", "Skin", "Brain"],
+      "choice": [ "Liver", "Heart", "Skin", "Brain" ],
       "ansIndex": 2
     },
     {
       "question": "Which shape is a round?",
-      "choice": ["Rectangle", "Circle", "Square", "Triangle"],
+      "choice": [ "Rectangle", "Circle", "Square", "Triangle" ],
       "ansIndex": 1
     },
     {
       "question": "Who invented the first functional telephone?",
-      "choice": ["Albert Einstein", "Nikola Tesla", "Thomas Alva Edison", "Alexander Graham Bell"],
+      "choice": [ "Albert Einstein", "Nikola Tesla", "Thomas Alva Edison", "Alexander Graham Bell" ],
       "ansIndex": 3
     },
     {
       "question": "What is the young one of a cow called?",
-      "choice": ["Puppy", "Kitten", "Calf", "Baby"],
+      "choice": [ "Puppy", "Kitten", "Calf", "Baby" ],
       "ansIndex": 2
     },
     {
       "question": "Dark rain clouds can give out lightning and ____.",
-      "choice": ["Thunder", "Snow", "Sunlight", "Wind"],
+      "choice": [ "Thunder", "Snow", "Sunlight", "Wind" ],
       "ansIndex": 0
     },
     {
       "question": "Your hands have four fingers and a ____.",
-      "choice": ["Knee", "Ankle", "Elbow", "Thumb"],
+      "choice": [ "Knee", "Ankle", "Elbow", "Thumb" ],
       "ansIndex": 3
     },
     {
       "question": "Which part of the bird lets it fly high in the sky?",
-      "choice": ["Beak", "Feet", "Wings", "Claws"],
+      "choice": [ "Beak", "Feet", "Wings", "Claws" ],
       "ansIndex": 2
     },
     {
       "question": "If you met an accident like injury, breakage or spillage you should immediately",
-      "choice": ["Report to teacher", "Run", "Hide", "Leave lab"],
+      "choice": [ "Report to teacher", "Run", "Hide", "Leave lab" ],
       "ansIndex": 0
     },
     {
       "question": "Science experiments are really interesting and you may have fun but if you are not careful it can be",
-      "choice": ["Dangerous", "Exciting", "Normal", "Same"],
+      "choice": [ "Dangerous", "Exciting", "Normal", "Same" ],
       "ansIndex": 0
     },
     {
       "question": "If a chemical get into your mouth you should",
-      "choice": ["Spit it out", "Rinse your mouth", "Visit a doctor", "All of them"],
+      "choice": [ "Spit it out", "Rinse your mouth", "Visit a doctor", "All of them" ],
       "ansIndex": 3
     },
     {
       "question": "The study of living things is the branch of science called",
-      "choice": ["Biology", "Chemistry", "Physics", "Geology"],
+      "choice": [ "Biology", "Chemistry", "Physics", "Geology" ],
       "ansIndex": 0
     },
     {
       "question": "An artist can make best use of colors by knowing their",
-      "choice": ["Brands", "Science", "Physics", "Texture"],
+      "choice": [ "Brands", "Science", "Physics", "Texture" ],
       "ansIndex": 1
     },
     {
       "question": "The typical common apparatus used for heating is",
-      "choice": ["Stove", "Bunsen burner", "Lantern", "Woods"],
+      "choice": [ "Stove", "Bunsen burner", "Lantern", "Woods" ],
       "ansIndex": 1
     },
     {
       "question": "The study and practice of science is impossible without",
-      "choice": ["Skills", "Processes", "both A and B", "Technology"],
+      "choice": [ "Skills", "Processes", "both A and B", "Technology" ],
       "ansIndex": 2
     },
     {
       "question": "Generating electricity by burning fossils fuels can lead to",
-      "choice": ["Pollution", "More discoveries", "Benefits", "Growing crops"],
+      "choice": [ "Pollution", "More discoveries", "Benefits", "Growing crops" ],
       "ansIndex": 0
     },
     {
       "question": "Observing that plants which are kept in dark wont make food lead us to inference that light is needed to make",
-      "choice": ["Oxygen", "Food", "CO2", "Water"],
+      "choice": [ "Oxygen", "Food", "CO2", "Water" ],
       "ansIndex": 1
     },
     {
       "question": "Radium nature was discovered by",
-      "choice": ["Isaac Newton", "Louis Pasteur", "Marie Curie", "All of them"],
+      "choice": [ "Isaac Newton", "Louis Pasteur", "Marie Curie", "All of them" ],
       "ansIndex": 2
     },
     {
       "question": "Energy and natural forces are studied in science subject",
-      "choice": ["Biology", "Chemistry", "Physics", "Geology"],
+      "choice": [ "Biology", "Chemistry", "Physics", "Geology" ],
       "ansIndex": 2
     },
     {
       "question": "Observation, apparatus handling, comparisons, classification, communication, inferring, hypothesis and analyzing are all",
-      "choice": ["Processes", "Skills", "Both A and B", "Personal trait"],
+      "choice": [ "Processes", "Skills", "Both A and B", "Personal trait" ],
       "ansIndex": 1
     },
     {
       "question": "Mercury, cyanide and chlorine are",
-      "choice": ["Toxic", "Poisonous", "Both A and B", "Harmless"],
+      "choice": [ "Toxic", "Poisonous", "Both A and B", "Harmless" ],
       "ansIndex": 2
     },
     {
       "question": "Careful and accurate observation using sensory organs is usually done by good observers who are",
-      "choice": ["Scientist", "Dentists", "Artists", "Priest"],
+      "choice": [ "Scientist", "Dentists", "Artists", "Priest" ],
       "ansIndex": 0
     },
     {
       "question": "Astronomy includes the study of stars, planets, moons and",
-      "choice": ["Space", "Earth", "Global warming", "All of them"],
+      "choice": [ "Space", "Earth", "Global warming", "All of them" ],
       "ansIndex": 0
     },
     {
       "question": "Nuclear explosions are harmful to",
-      "choice": ["Plants", "Animals", "Humans", "All of them along with environment"],
+      "choice": [ "Plants", "Animals", "Humans", "All of them along with environment" ],
       "ansIndex": 3
     },
     {
       "question": "An instrument used to measure volume of liquid to an accuracy of 0.1 cm3 is called",
-      "choice": ["Pipette", "Burette", "Crucible", "Retort stand"],
+      "choice": [ "Pipette", "Burette", "Crucible", "Retort stand" ],
       "ansIndex": 1
     },
     {
       "question": "Petrol and Alcohol are flammable put it",
-      "choice": ["Away from heat", "Near to heat", "Near to water", "Use as extinguisher"],
+      "choice": [ "Away from heat", "Near to heat", "Near to water", "Use as extinguisher" ],
       "ansIndex": 0
     },
     {
       "question": "For your safety in a laboratory you should always adhere to",
-      "choice": ["Safety rules", "Chemicals", "Compounds", "Apparatus"],
+      "choice": [ "Safety rules", "Chemicals", "Compounds", "Apparatus" ],
       "ansIndex": 0
     },
     {
       "question": "Inference has been drawn from",
-      "choice": ["Observation", "Conclusions", "Analysis", "Hypothesis"],
+      "choice": [ "Observation", "Conclusions", "Analysis", "Hypothesis" ],
       "ansIndex": 1
     },
     {
       "question": "Animals that suckle their young one are called ____.",
-      "choice": ["Reptiles", "Birds", "Amphibians", "Mammals"],
+      "choice": [ "Reptiles", "Birds", "Amphibians", "Mammals" ],
       "ansIndex": 3
     },
     {
       "question": "What part of the plant conducts photosynthesis?",
-      "choice": ["Branch", "Leaf", "Root", "Trunk"],
+      "choice": [ "Branch", "Leaf", "Root", "Trunk" ],
       "ansIndex": 1
     },
     {
       "question": "What is the boiling point of water?",
-      "choice": ["25°C", "50°C", "75°C", "100°C"],
+      "choice": [ "25°C", "50°C", "75°C", "100°C" ],
       "ansIndex": 3
     },
     {
       "question": "Which is the largest land animal?",
-      "choice": ["Lion", "Tiger", "Elephant", "Rhinoceros"],
+      "choice": [ "Lion", "Tiger", "Elephant", "Rhinoceros" ],
       "ansIndex": 2
     },
     {
       "question": "____ helps pump blood through the entire body.",
-      "choice": ["Lungs", "Kidneys", "Heart", "Brain"],
+      "choice": [ "Lungs", "Kidneys", "Heart", "Brain" ],
       "ansIndex": 2
     },
     {
       "question": "How does a dog express happiness?",
-      "choice": ["Twitching ears", "Moving head", "Closing eyes", "Wagging tail"],
+      "choice": [ "Twitching ears", "Moving head", "Closing eyes", "Wagging tail" ],
       "ansIndex": 3
     },
     {
       "question": "What are the three states of matter?",
-      "choice": ["Gas, Solid and Particles", "Solid, Liquid and Gas", "Atom, Particles and Solid", "Atom, Nucleus and Liquid"],
+      "choice": [ "Gas, Solid and Particles", "Solid, Liquid and Gas", "Atom, Particles and Solid", "Atom, Nucleus and Liquid" ],
       "ansIndex": 1
     },
     {
       "question": "What category does Frog represent?",
-      "choice": ["Reptiles", "Amphibian", "Birds", "Mammals "],
+      "choice": [ "Reptiles", "Amphibian", "Birds", "Mammals " ],
       "ansIndex": 1
     },
     {
       "question": "If one boils water it will convert into ____.",
-      "choice": ["Mist", "Steam", "Clouds", "Snow"],
+      "choice": [ "Mist", "Steam", "Clouds", "Snow" ],
       "ansIndex": 1
     },
     {
       "question": "When you push something, you apply ____.",
-      "choice": ["Force", "Acceleration", "Mass", "Compression"],
+      "choice": [ "Force", "Acceleration", "Mass", "Compression" ],
       "ansIndex": 0
     },
     {
       "question": "Which group of animals have scales?",
-      "choice": ["Mammals", "Amphibians", "Reptiles", "Birds"],
+      "choice": [ "Mammals", "Amphibians", "Reptiles", "Birds" ],
       "ansIndex": 2
     },
     {
       "question": "Where does our food collect after we chew and swallow it?",
-      "choice": ["Small intestine", "Large intestine", "Stomach", "Liver"],
+      "choice": [ "Small intestine", "Large intestine", "Stomach", "Liver" ],
       "ansIndex": 2
     },
     {
       "question": "Which material from the following has the highest transparency?",
-      "choice": ["Paper", "Wood", "Metal", "Glass"],
+      "choice": [ "Paper", "Wood", "Metal", "Glass" ],
       "ansIndex": 3
     },
     {
       "question": "Which animal from the below list is best adapted to the desert?",
-      "choice": ["Tiger", "Cheetah", "Camel", "Deer"],
+      "choice": [ "Tiger", "Cheetah", "Camel", "Deer" ],
       "ansIndex": 2
     },
     {
       "question": "What part of the skeletal system protects the brain?",
-      "choice": ["Spine", "Thigh", "Pelvis", "Skull"],
+      "choice": [ "Spine", "Thigh", "Pelvis", "Skull" ],
       "ansIndex": 3
     },
     {
       "question": "What is the name of a frog’s young one?",
-      "choice": ["Infant", "Puppy", "Calf", "Tadpole"],
+      "choice": [ "Infant", "Puppy", "Calf", "Tadpole" ],
       "ansIndex": 3
     },
     {
       "question": "Which pigment gives the leaves its green color?",
-      "choice": ["Chlorophyll", "Tip", "Vein", "Lamina"],
+      "choice": [ "Chlorophyll", "Tip", "Vein", "Lamina" ],
       "ansIndex": 0
     },
     {
       "question": "Human senses are very limited as well as not reliable hence instruments are used like",
-      "choice": ["Thermometers", "Microscopes", "Telescopes", "All of them"],
+      "choice": [ "Thermometers", "Microscopes", "Telescopes", "All of them" ],
       "ansIndex": 3
     },
     {
       "question": "When you are mixing or heating up the chemicals always wear",
-      "choice": ["Gloves", "Goggles", "Both A and B", "Jogging shoes"],
+      "choice": [ "Gloves", "Goggles", "Both A and B", "Jogging shoes" ],
       "ansIndex": 2
     },
     {
       "question": "Communications are made a lot more easier by",
-      "choice": ["Horses", "Pigeons", "Mobile phones", "Electricity"],
+      "choice": [ "Horses", "Pigeons", "Mobile phones", "Electricity" ],
       "ansIndex": 2
     },
     {
       "question": "Blood and its products are biohazardous which can spread infections of",
-      "choice": ["Virus", "Bacteria", "Both A and B", "Fungus"],
+      "choice": [ "Virus", "Bacteria", "Both A and B", "Fungus" ],
       "ansIndex": 2
     },
     {
       "question": "Air pollution is generally made by",
-      "choice": ["Factories", "Houses", "Mobiles", "LED"],
+      "choice": [ "Factories", "Houses", "Mobiles", "LED" ],
       "ansIndex": 0
     },
     {
       "question": "An uncertain explanation for any observation which can be verified by investigation is called",
-      "choice": ["Observation", "Conclusions", "Analysis", "Hypothesis"],
+      "choice": [ "Observation", "Conclusions", "Analysis", "Hypothesis" ],
       "ansIndex": 3
     },
     {
       "question": "What tissue connects muscles to bones?",
-      "choice": ["Skin", "Blood vessels", "Fat", "Tendon"],
+      "choice": [ "Skin", "Blood vessels", "Fat", "Tendon" ],
       "ansIndex": 3
     },
     {
       "question": "Which nutrient plays an essential role in muscle-building?",
-      "choice": ["Protein", "Carbohydrate", "Iron", "Fat"],
+      "choice": [ "Protein", "Carbohydrate", "Iron", "Fat" ],
       "ansIndex": 0
     },
     {
       "question": "Plants need which gas to perform photosynthesis?",
-      "choice": ["Hydrogen", "Carbon monoxide", "Carbon dioxide", "Oxygen"],
+      "choice": [ "Hydrogen", "Carbon monoxide", "Carbon dioxide", "Oxygen" ],
       "ansIndex": 2
     },
     {
       "question": "Which scientist proposed the three laws of motion?",
-      "choice": ["Isaac Newton", "Thomas Alva Edison", "Albert Einstein", "Stephen Hawking"],
+      "choice": [ "Isaac Newton", "Thomas Alva Edison", "Albert Einstein", "Stephen Hawking" ],
       "ansIndex": 0
     },
     {
       "question": "Thomas Edison invented light bulb, phonograph, motion picture apparatus and many things even being",
-      "choice": ["Blind", "Deaf", "Dumb", "Sick"],
+      "choice": [ "Blind", "Deaf", "Dumb", "Sick" ],
       "ansIndex": 1
     },
     {
       "question": "Earth is surrounded by layers of gases collectively called the _____.",
-      "choice": ["Hydrosphere", "Stratosphere", "Atmosphere", "Ozone layer"],
+      "choice": [ "Hydrosphere", "Stratosphere", "Atmosphere", "Ozone layer" ],
       "ansIndex": 2
     },
     {
       "question": "Which system of the body controls the senses?",
-      "choice": ["Circulatory system", "Digestive system", "Nervous system", "Skeletal system"],
+      "choice": [ "Circulatory system", "Digestive system", "Nervous system", "Skeletal system" ],
       "ansIndex": 2
     },
     {
       "question": "Which is the largest animal on earth?",
-      "choice": ["Shark", "Elephant", "Blue whale", "Giraffe"],
+      "choice": [ "Shark", "Elephant", "Blue whale", "Giraffe" ],
       "ansIndex": 2
     },
     {
       "question": "Similar body cells group together to form a ___.",
-      "choice": ["Organ", "Tissue", "Blood vessels", "Joints"],
+      "choice": [ "Organ", "Tissue", "Blood vessels", "Joints" ],
       "ansIndex": 1
     },
     {
       "question": "What energy emerges from motion?",
-      "choice": ["Potential energy", "Electrical energy", "Kinetic energy", "Gravitational energy"],
+      "choice": [ "Potential energy", "Electrical energy", "Kinetic energy", "Gravitational energy" ],
       "ansIndex": 2
     },
     {
       "question": "Which is the strongest sense in a dog?",
-      "choice": ["Touch", "Hearing", "Smell", "Taste"],
+      "choice": [ "Touch", "Hearing", "Smell", "Taste" ],
       "ansIndex": 2
     },
     {
       "question": "The standard unit of measurement for energy is ____.",
-      "choice": ["Newton", "Ampere", "Watt", "Joule"],
+      "choice": [ "Newton", "Ampere", "Watt", "Joule" ],
       "ansIndex": 3
     },
     {
       "question": "Which biologist proposed the theory of evolution through natural selection?",
-      "choice": ["Charles Darwin", "Stephen Hawking", "Francesco Redi", "Alexander Fleming"],
+      "choice": [ "Charles Darwin", "Stephen Hawking", "Francesco Redi", "Alexander Fleming" ],
       "ansIndex": 0
     },
     {
       "question": "What are animals, which eat both plants and animals, called?",
-      "choice": ["Herbivores", "Insectivores", "Carnivores", "Omnivores"],
+      "choice": [ "Herbivores", "Insectivores", "Carnivores", "Omnivores" ],
       "ansIndex": 3
     },
     {
       "question": "The outward force, away from the center, felt by an object in circular motion is ___.",
-      "choice": ["Centripetal force", "Circular force", "Centrifugal forces", "Elastic force"],
+      "choice": [ "Centripetal force", "Circular force", "Centrifugal forces", "Elastic force" ],
       "ansIndex": 0
     },
     {
       "question": "What type of energy eventually depletes?",
-      "choice": ["Kinetic energy", "Non-renewable energy", "Gravitational energy", "Renewable energy"],
+      "choice": [ "Kinetic energy", "Non-renewable energy", "Gravitational energy", "Renewable energy" ],
       "ansIndex": 1
     },
     {
       "question": "A single piece of coiled DNA is called ____.",
-      "choice": ["Nucleus", "Ribosome", "Cytoplasm", "Chromosome"],
+      "choice": [ "Nucleus", "Ribosome", "Cytoplasm", "Chromosome" ],
       "ansIndex": 3
     },
     {
       "question": "Yeast is a type of ____.",
-      "choice": ["Plant", "Animal", "Bacterium", "Fungus"],
+      "choice": [ "Plant", "Animal", "Bacterium", "Fungus" ],
       "ansIndex": 3
     },
     {
       "question": "Which is the closest planet to the sun?",
-      "choice": ["Venus", "Mars", "Mercury", "Earth"],
+      "choice": [ "Venus", "Mars", "Mercury", "Earth" ],
       "ansIndex": 2
     },
     {
       "question": "A skill which draws conclusions from observation or information gathered is called",
-      "choice": ["Processes", "Inferring", "Communication", "Analysis"],
+      "choice": [ "Processes", "Inferring", "Communication", "Analysis" ],
       "ansIndex": 1
+    },
+    {
+      "question": "If a solid is required heating directly apparatus used will be?",
+      "choice": [ "Pipette", "Burette", "Crucible", "Retort stand" ],
+      "ansIndex": 2
+    },
+    {
+      "question": "The extension of inference is called a",
+      "choice": [ "Observation", "Conclusions", "C.Analysis", "D.Hypothesis" ],
+      "ansIndex": 3
+    },
+    {
+      "question": "The bending of light through a glass prism is called ____.",
+      "choice": [ "Reflection", "Refraction", "Diffraction", "Absorption" ],
+      "ansIndex": 1
+    },
+    {
+      "question": "Diabetes happens because of problems in which organ of the body?",
+      "choice": [ "Liver", "Heart", "Pancreas", "Kidneys" ],
+      "ansIndex": 2
+    },
+    {
+      "question": "An acidic liquid will have a ___ pH.",
+      "choice": [ "High", "Moderate", "Low", "Very High" ],
+      "ansIndex": 2
+    },
+    {
+      "question": "What elements are the most common in the human body?",
+      "choice": [ "Sulfur, sodium, magnesium", "Phosphorus, nitrogen, calcium", "Copper, zinc, selenium", "Oxygen, carbon, hydrogen" ],
+      "ansIndex": 3
+    },
+    {
+      "question": "Earthquake cannot be stopped or prevented by _____",
+      "choice": [ "Science", "Technology", "Both a and b", "God" ],
+      "ansIndex": 2
+    },
+    {
+      "question": "What happens when two magnets are put close together?",
+      "choice": [ "It will repel each other", "Both magnets will turn to the left", "It will attract each other", "Both magnets will turn to the right" ],
+      "ansIndex": 2
+    },
+    {
+      "question": "Which of the following is the correct order of the natural water cycle?",
+      "choice": [ "Clouds → Water vapour → Water → Rain", "Water vapour → Water → Clouds → Rain", "Water → Water vapour → Clouds → Rain", "Rain → Water vapour → Clouds → Water" ],
+      "ansIndex": 2
+    },
+    {
+      "question": "Which planet is fartest from the sun?",
+      "choice": [ "Neptune", "Earth", "Mercury", "Jupiter" ],
+      "ansIndex": 0
     }
-    
+
   ]
 }

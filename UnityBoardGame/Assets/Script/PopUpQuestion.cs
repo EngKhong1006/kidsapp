@@ -11,6 +11,7 @@ public class PopUpQuestion : MonoBehaviour
     private int randBuff = 0;
 
     [Header("Question Screen Setting")]
+    [SerializeField] private GameObject questionScreen;
     [SerializeField] private Text questionText;
     [SerializeField] private Text[] questionChoice;
     [SerializeField] private Text timer;
@@ -73,6 +74,7 @@ public class PopUpQuestion : MonoBehaviour
                 questionChoice[i].text = currentQuestion.choice[i];
             }
 
+            questionScreen.active = true;
             animatorQuestionScreen.Play("SlideIn", -1);
             timer.text = TIMERCOUNTER.ToString() + " s";
             timer.color = Color.green;
@@ -297,6 +299,7 @@ public class PopUpQuestion : MonoBehaviour
         }
         animatorAnsScreen.Play("ZoomOut", -1);
         animatorQuestionScreen.Play("SlideOut", -1);
+        questionScreen.active = false;
         coroutineAllowed = true;
     }
 

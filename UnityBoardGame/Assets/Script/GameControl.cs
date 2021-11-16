@@ -58,6 +58,9 @@ public class GameControl : MonoBehaviour
         player1.GetComponent<FollowThePath>().moveAllowed = false;
         player2.GetComponent<FollowThePath>().moveAllowed = false;
 
+        player1StartWaypoint = 0;
+        player2StartWaypoint = 0;
+
         whoWinsTextShadow.gameObject.SetActive(false);
         player1WinIcon.gameObject.SetActive(false);
         player2WinIcon.gameObject.SetActive(false);

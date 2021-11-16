@@ -315,6 +315,7 @@ m_PackageAssets:
         - 3.4.0
         - 3.5.3
         - 3.6.11
+        - 3.6.12
         compatible:
         - 0.0.3
         - 0.0.4
@@ -351,6 +352,7 @@ m_PackageAssets:
         - 3.4.0
         - 3.5.3
         - 3.6.11
+        - 3.6.12
         verified: 3.5.3
       dependencies:
       - name: com.unity.ugui
@@ -853,6 +855,8 @@ m_PackageAssets:
         - 3.2.3
         - 4.0.0
         - 4.0.3
+        - 4.1.0
+        - 4.1.1
         compatible:
         - 0.0.3
         - 0.0.4
@@ -893,6 +897,8 @@ m_PackageAssets:
         - 3.2.3
         - 4.0.0
         - 4.0.3
+        - 4.1.0
+        - 4.1.1
         verified: 3.2.3
       dependencies:
       - name: com.unity.ugui
